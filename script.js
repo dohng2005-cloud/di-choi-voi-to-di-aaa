@@ -64,7 +64,7 @@ $("#maybeBtn").addEventListener("click", () => {
     $("#planTime").textContent = invitation.time;
     confetti();
     heartBurst(18);
-    showScreen("#screen-yay");
+    showScreen("#screen-food");
     return;
   }
 
