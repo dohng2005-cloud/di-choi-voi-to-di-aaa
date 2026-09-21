@@ -1,9 +1,9 @@
 const invitation = {
-  title: "cậu ơi,<br>tối nay đi chơi<br>với tớ nha? 🥺",
-  subtitle: "Không cần đi đâu xa đâu,<br>chỉ cần cậu đi cùng tớ là được.",
+  title: "cậu ơii,<br>tối nay đi chơi<br>với tớ nhá ạ!!! ",
+  subtitle: "Cậu ơii,<br>tối nay cậu có muốn ra ngoài một chút khum.",
   time: "20h45",
   location: "Chỗ nào cậu thích nhất!",
-  planShort: "Ăn tối · dạo phố · tám chuyện"
+  planShort: "Ăn tối · xem phim"
 };
 
 const $ = (s) => document.querySelector(s);
