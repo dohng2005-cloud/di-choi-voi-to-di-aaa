@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f5c0ae" />
+  <title>Lời mời đi chơi tối nay 🌙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="sun" id="sun" title="Bấm thử xem 👀"></div>
+    <div class="sparkles" id="sparkles"></div>
+  </div>
+
+  <main class="app">
+    <div class="topline">🌙 <span>Lời mời đặc biệt</span></div>
+
+    <section class="screen active" id="screen-invite" aria-labelledby="invite-title">
+      <div class="hero">
+        <h1 id="invite-title"></h1>
+        <p class="lead" id="invite-subtitle"></p>
+      </div>
+
+      <div class="info-card">
+        <div class="info-row"><span>🕘</span><strong id="time"></strong></div>
+        <div class="divider"></div>
+        <div class="info-row"><span>📍</span><strong id="location"></strong></div>
+        <div class="divider"></div>
+        <div class="info-row"><span>🍜</span><strong id="plan-short"></strong></div>
+        <p class="note">Không có lịch trình gì nghiêm túc đâu 😌<br>Cứ đi rồi tính.</p>
+      </div>
+
+      <div class="actions">
+        <button class="primary" id="yesBtn">Đi thôi! 🎉</button>
+        <button class="secondary" id="maybeBtn">Để tớ xem đã 🤔</button>
+      </div>
+      <p class="reaction" id="reaction" aria-live="polite"></p>
+    </section>
+
+    <section class="screen" id="screen-yay">
+      <div class="emoji-big">🥳</div>
+      <h2>YAYYYY</h2>
+      <p class="lead">Vậy là tối nay có hẹn rồi nhé.</p>
+      <p class="date-line"><strong id="yayTime"></strong><br>Tớ sẽ đợi cậu ❤️</p>
+
+      <div class="plan-card">
+        <div class="card-label">🌙 KẾ HOẠCH TỐI NAY</div>
+        <div class="plan-item"><span>🕘</span><span><b id="planTime"></b><small>Gặp nhau</small></span></div>
+        <div class="plan-item"><span>🍜</span><span><b>Ăn gì đó thật ngon</b></span></div>
+        <div class="plan-item"><span>🚶</span><span><b>Đi dạo một chút</b></span></div>
+        <div class="plan-item"><span>💬</span><span><b>Tám chuyện linh tinh</b></span></div>
+        <div class="plan-item"><span>❤️</span><span><b>Về nhà vui hơn lúc đi</b></span></div>
+        <p class="note">Còn đi đâu cụ thể...<br>để tối nay quyết định 😌</p>
+      </div>
+
+      <button class="primary" id="toFoodBtn">Tiếp tục nhé ✨</button>
+    </section>
+
+    <section class="screen" id="screen-food">
+      <div class="emoji-big">🍽️</div>
+      <h2>À mà...</h2>
+      <p class="lead">Cậu muốn ăn gì tối nay?</p>
+
+      <div class="food-options">
+        <button class="food-chip" data-food="Món nước 🍜">🍜 <span>Món nước</span></button>
+        <button class="food-chip" data-food="Đồ ăn ngon 🍗">🍗 <span>Đồ ăn ngon</span></button>
+        <button class="food-chip" data-food="Ăn vặt 🍰">🍰 <span>Ăn vặt</span></button>
+      </div>
+
+      <p class="choose-hint">Cậu chọn đi, tớ theo 😌</p>
+      <p class="chosen" id="chosen" aria-live="polite"></p>
+      <button class="primary hidden" id="finishBtn">Chốt kèo ❤️</button>
+    </section>
+
+    <section class="screen final-screen" id="screen-final">
+      <div class="heart-burst">❤️</div>
+      <h2>Thế là chốt kèo nhé ❤️</h2>
+      <p class="lead"><strong id="finalTime"></strong><br>Đừng để tớ chờ lâu đó 😗</p>
+      <div class="final-card">
+        <span>🌙</span>
+        <p id="finalFood">Tối nay gặp nhé.</p>
+      </div>
+      <button class="primary" id="doneBtn">Đã rõ 🫡</button>
+      <p class="ps hidden" id="ps">See you tonight! 🌙❤️<br><small>P/S: Mặc gì cũng được.<br>Miễn là cậu đến 😌</small></p>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
