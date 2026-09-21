@@ -60,9 +60,6 @@ $("#maybeBtn").addEventListener("click", () => {
       <div class="plan-item"><span>🕘</span><span><b id="planTime">${invitation.time}</b><small>Gặp nhau</small></span></div>
       <div class="plan-item"><span>🍜</span><span><b>Ăn tối cùng nhau</b><small>Chọn món ngon rồi ăn thật no 😋</small></span></div>
       <div class="plan-item"><span>🎬</span><span><b>Xem một bộ phim</b><small>Ngồi cạnh nhau và chill một chút 🍿</small></span></div>
-      <div class="plan-item"><span>💬</span><span><b>Tám chuyện linh tinh</b></span></div>
-      <div class="plan-item"><span>❤️</span><span><b>Về nhà vui hơn lúc đi</b></span></div>
-      <p class="note">Không cần lịch trình phức tạp.<br>Tối nay cứ ăn ngon và xem phim cùng nhau là được 😌</p>
     `;
     $("#planTime").textContent = invitation.time;
     confetti();
